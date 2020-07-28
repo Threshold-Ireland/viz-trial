@@ -1,0 +1,35 @@
+{
+    "data": [
+         {  "year": "2019",
+            "total": "500",
+            "direct": {
+                "total": "250",
+                "HAP": "100",
+                "RAS": "100",
+                "charities": "50"
+            },
+            "indirect":{
+                "total": "250",
+                "revenue": "100",
+                "medical": "100",
+                "juristical": "50"
+            }
+        },
+        {  "year": "2018",
+            "total": "400",
+            "direct": {
+                "total": "250",
+
+                "HAP": "100",
+                "RAS": "100",
+                "charities": "50"
+            },
+            "indirect":{
+                "total": "150",
+                "revenue": "50",
+                "medical": "50",
+                "juristical": "50"
+            }
+        }
+    ]
+}
