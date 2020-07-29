@@ -3,10 +3,21 @@ function getJson() {
         return response.json()
     }).then((data) => {
         populateData(data)
+        hideElement("loading");
+        displayElement("content");
+        populateLinkList([{link: "link", title: "link1 title"}, {link: "google.com", title: "google"}])
     }).catch((err)=> {
         console.log(err)
     })
 };
+
+function displayElement(id) {
+    document.getElementById(id).style.display = "flex";
+}
+
+function hideElement(id) {
+    document.getElementById(id).style.display = "none";
+}
 
 function populateData(data) {
     populateYears(data.yearlyCostData, "year-select");
@@ -33,6 +44,26 @@ function populateDataFromYear(yearData){
 
     document.getElementById("data-indirect-cost").textContent = yearData.indirect.total;
     document.getElementById("data-indirect-cost-breakdown").textContent = `${yearData.indirect.revenue} lost in revenue\n${yearData.indirect.medical} in medical cost\n${yearData.indirect.juridical} in juridical cost`;
+}
+
+function populateLinkList(links) {
+    // hide div if we have no links
+    if(links.length === 0){
+        hideElement("human-costs");  
+    }
+
+    const listSpan = document.getElementById("link-list");
+    for(id in links) {
+        if(id > 0){
+            const span = document.createElement('span');
+            span.textContent = ', '
+            listSpan.appendChild(span)
+        }
+        const a = document.createElement('a');
+        a.href = links[id].link;
+        a.textContent = links[id].title;
+        listSpan.appendChild(a)
+    }
 }
   
 // Load data

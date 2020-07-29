@@ -1,7 +1,16 @@
 body {
     display: flex;
     justify-content: center;
-    font-size: large;
+}
+
+.em {
+    font-weight: bold;
+}
+
+#content {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
 }
 
 a.hoverTooltip {
