@@ -1,4 +1,2 @@
 # viz-trial
-Experiments in visualizing data about homelessness and its cost.
-
-Basic website added.
+Experiments in visualizing data about homelessness and its cost: https://threshold-ireland.github.io/viz-trial/
