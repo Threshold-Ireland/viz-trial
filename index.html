@@ -2,17 +2,24 @@
 
 <head>
     <title>Threshold Homelessness Data Visualization</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css"href="styles.css">
-    <link
-  rel="stylesheet"
-  href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
-/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu').load('menu.html');
+        });
+    </script>
+
 </head>
 
-<body class="ms-Fabric">
-    <div id="loading">Loading data ...</div> 
-    <div id="content" class="ms-font-m">
+<body>
+    <div id="menu"></div>
+    <div id="loading">Loading data ...</div>
+    <div id="content" class=" ms-Fabric ms-font-m">
+        <h1>The cost of Homelessness in Ireland</h1>
         <div>
             <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
                     onchange="yearSelected(this)">
@@ -20,8 +27,10 @@
         </div>
         <div>
             <p>This cost is composed of
-            <p><span id="data-direct-cost"></span> of <a href="" class="hoverTooltip">direct cost<span id="data-direct-cost-breakdown"></span></a>, and</p>
-            <p><span id="data-indirect-cost"></span> of <a href="" class="hoverTooltip">indirect cost<span id="data-indirect-cost-breakdown"></span></a>.</p>
+            <p><span id="data-direct-cost"></span> of <a href="" class="hoverTooltip">direct cost<span
+                        id="data-direct-cost-breakdown"></span></a>, and</p>
+            <p><span id="data-indirect-cost"></span> of <a href="" class="hoverTooltip">indirect cost<span
+                        id="data-indirect-cost-breakdown"></span></a>.</p>
             </p>
         </div>
         <div id="human-costs">
