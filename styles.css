@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+a.hoverTooltip {
+    border-bottom: 1px dashed;
+    text-decoration: none
+}
+a.hoverTooltip:hover {
+    position: relative
+}
+a.hoverTooltip span {
+    display: none
+}
+a.hoverTooltip:hover span {
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 1px solid;
+    padding: 5px 20px 5px 5px;
+    display: flex;
+    z-index: 100;
+    left: 20px;
+    margin: 10px;
+    width: max-content;
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+    white-space: pre-line;
+}

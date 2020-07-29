@@ -1,20 +1,27 @@
 <html>
+
 <head>
-<title>Threshold Homelessness Data Visualization</title>
-<script src="script.js"></script>
+    <title>Threshold Homelessness Data Visualization</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css"href="styles.css">
 </head>
+
 <body>
-    <div>
-        <p>The cost of Homelessness in Ireland during <select name="year" id="year-select" onchange="yearSelected(this)">
-        </select> is/was <span id="data-cost">N.A.</span></p>
-    </div> 
-    <div>
-        <p>This cost is composed of
-            <p><span id="data-direct-cost"></span> of direct cost, and</p>
-            <p><span id="data-indirect-cost"></span> of indirect cost</p>
-        </p>
+    <div class="loading"></div> 
+    <div class="content">
+        <div>
+            <p>The cost of Homelessness in Ireland during <select name="year" id="year-select"
+                    onchange="yearSelected(this)">
+                </select> is/was <span id="data-cost">N.A.</span></p>
+        </div>
+        <div>
+            <p>This cost is composed of
+            <p><span id="data-direct-cost"></span> of <a href="#" class="hoverTooltip">direct cost<span id="data-direct-cost-breakdown"></span></a></p>
+            <p><span id="data-indirect-cost"></span> of <a href="#" class="hoverTooltip">indirect cost<span id="data-indirect-cost-breakdown"></span></a></p>
+            </p>
+        </div>
     </div>
 
-    
-<body>
+    <body>
+
 </html>
