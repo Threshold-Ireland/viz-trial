@@ -1,4 +1,19 @@
 <html>
+
+<head>
+    <title>Threshold Homelessness Data Visualization</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu').load('menu.html');
+        });
+    </script>
+
+</head>
 <body>
     <div id="menu"></div>
     <div id="loading">Loading data ...</div>
@@ -20,6 +35,7 @@
         <div id="human-costs">
             <p>And incalculable human cost, as per the following stories: <span id="link-list"></span></p>
         </div>
+	<h1>Relationship between rent prices and homelessness</h1>
    <div id="observablehq-72e63289"></div>
     <script type="module">
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
