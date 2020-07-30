@@ -51,10 +51,24 @@ body {
     border: none;
 }
 
+i {
+    margin-top: 5em;
+}
+
+i:hover {
+    font-weight: bolder;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
 #page {
     display: flex;
     align-self: center;
-    flex-grow: 1;
     flex-direction: column;
 }
 

@@ -9,7 +9,6 @@
     <div class="observablehq-interactive_homeless"></div>
 </div>
 <script type="module">
-    console.log("start loading");
     import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
     import define from "https://api.observablehq.com/@lupino3/ireland-homelessness-study.js?v=3";
     (new Runtime).module(define, name => {
@@ -20,8 +19,5 @@
         if (name === "viewof interactive_rent") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_rent")();
         if (name === "viewof interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_homeless")();
         if (name === "interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-interactive_homeless")();
-            console.log("done?");
-
     });
-        console.log("done??");
 </script>
