@@ -45,19 +45,19 @@ function getHomeData() {
     year <= DATA.data_info.max_year;
     year++
   ) {
-    yearSelects.push({ "year": year, "selected": year === DATA.data_info.default_year });
+    yearSelects.push({ "year": year, "selected": year === DATA.data_info.default_year, data: JSON.stringify(DATA.cost_per_year.find(x=> x.year===year))});
   }
   return yearSelects;
 }
 
 function showPage(page) {
   var page = Handlebars.getTemplate(page);
-var currentSelect = DATA.cost_per_year.find(
+var initialSelect = DATA.cost_per_year.find(
     (x) => x.year === DATA.data_info.default_year
   );
   var html = page({
     yearSelects: getHomeData(),
-    currentSelect: currentSelect,
+    initialSelect: initialSelect,
   });
   $("#page").html(html);
 }
