@@ -97,13 +97,10 @@ const UNITS = ["million", "billion", "trillion", "quadrillion"];
 
 function asMoney(value) {
   var num = Number(value);
-  // curtsey of https://gist.github.com/MartinMuzatko/1060fe584d17c7b9ca6e
   if (num >= 1e6) {
-    // Divide to get SI Unit engineering style numbers (1e3,1e6,1e9, etc)
-    var unit = Math.floor((num / 1000).toFixed(0).toString().length);
-    var unitName = UNITS[Math.floor(unit / 3) - 1];
-    // output number remainder + unitName
-    num = (num / ("1e" + (unit + 2))).toFixed(3) + " " + unitName;
+    const unit = num.toString().split('.')[0].length;
+    const unitName = unit < 10 ? "million" : "billion";
+    num = (num / ("1e" + (unit-3))).toFixed(3) + " " + unitName;
   }
   return "€ " + num;
   //return Number(value).toLocaleString('en-IE', { style: 'currency', currency: 'EUR' })
