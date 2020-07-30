@@ -12,7 +12,19 @@
             $('#menu').load('menu.html');
         });
     </script>
+    <script type="module">
+        // Embed graphs from the Observable notebook at https://observablehq.com/d/4719b721e353a3fb
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/4719b721e353a3fb.js?v=3";
 
+        // Rent vs. Homelessness data.
+        const graph_inspector = Inspector.into("#rent_vs_homelessness");
+        (new Runtime).module(define, name => name === "chart" ? graph_inspector() : undefined);
+
+        // Legend.
+        const legend_inspector = Inspector.into("#legend");
+        (new Runtime).module(define, name => name === "viewof legend" ? legend_inspector() : undefined);
+    </script>
 </head>
 <body>
     <div id="menu"></div>
@@ -35,16 +47,10 @@
         <div id="human-costs">
             <p>And incalculable human cost, as per the following stories: <span id="link-list"></span></p>
         </div>
-	<h1>Relationship between rent prices and homelessness</h1>
-   <div id="observablehq-72e63289"></div>
-    <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/4719b721e353a3fb.js?v=3";
-      const inspect = Inspector.into("#observablehq-72e63289");
-      (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-    </script>
-    </div>
 
+        <h1>Relationship between rent prices and homelessness</h1>
+            <div id="legend"></div>
+            <div id="rent_vs_homelessness"></div>
+        </div>
     <body>
-
 </html>
