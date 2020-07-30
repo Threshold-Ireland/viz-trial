@@ -1,35 +1,404 @@
 {
-    "yearlyCostData": [
-         {  "year": "2019",
-            "total": "500",
+    "cost_per_year": [
+        {
+            "year": 2016,
             "direct": {
-                "total": "250",
-                "HAP": "100",
-                "RAS": "100",
-                "charities": "50"
+                "HAP": 57.69,
+                "RAS": 130998164.56,
+                "charities": 20160,
+                "total": 131018382.25
             },
-            "indirect":{
-                "total": "250",
-                "revenue": "100",
-                "medical": "100",
-                "juridical": "50"
-            }
+            "indirect": 33895506051,
+            "total": 34034749617
         },
-        {  "year": "2018",
-            "total": "400",
+        {
+            "year": 2017,
             "direct": {
-                "total": "250",
-
-                "HAP": "100",
-                "RAS": "100",
-                "charities": "50"
+                "HAP": 152.69,
+                "RAS": 142837781.59,
+                "charities": 20170,
+                "total": 142858104.28
             },
-            "indirect":{
-                "total": "150",
-                "revenue": "50",
-                "medical": "50",
-                "juridical": "50"
-            }
+            "indirect": 42109793669,
+            "total": 42255296488
+        },
+        {
+            "year": 2018,
+            "direct": {
+                "HAP": 276.6,
+                "RAS": 143336836.63,
+                "charities": 20180,
+                "total": 143357293.23
+            },
+            "indirect": 50705395689,
+            "total": 50877343306
+        },
+        {
+            "year": 2019,
+            "direct": {
+                "HAP": 382,
+                "RAS": 134290217.27,
+                "charities": 20190,
+                "total": 134310789.27
+            },
+            "indirect": 56820913346,
+            "total": 56955224135
+        },
+        {
+            "year": 2020,
+            "direct": {
+                "HAP": 178.5,
+                "RAS": 0,
+                "charities": 20200,
+                "total": 20378.5
+            },
+            "indirect": 23848844843,
+            "total": 23848865221
         }
-    ]
+    ],
+    "homeless_vs_rental_price": [
+        {
+            "year": "2016",
+            "month": "1",
+            "homeless_adults": "2678",
+            "rent_price": "1461"
+        },
+        {
+            "year": "2016",
+            "month": "2",
+            "homeless_adults": "2692",
+            "rent_price": "1459"
+        },
+        {
+            "year": "2016",
+            "month": "3",
+            "homeless_adults": "2750",
+            "rent_price": "1473"
+        },
+        {
+            "year": "2016",
+            "month": "4",
+            "homeless_adults": "2806",
+            "rent_price": "1484"
+        },
+        {
+            "year": "2016",
+            "month": "5",
+            "homeless_adults": "2767",
+            "rent_price": "1529"
+        },
+        {
+            "year": "2016",
+            "month": "6",
+            "homeless_adults": "2871",
+            "rent_price": "1547"
+        },
+        {
+            "year": "2016",
+            "month": "7",
+            "homeless_adults": "2922",
+            "rent_price": "1546"
+        },
+        {
+            "year": "2016",
+            "month": "8",
+            "homeless_adults": "2950",
+            "rent_price": "1580"
+        },
+        {
+            "year": "2016",
+            "month": "9",
+            "homeless_adults": "2988",
+            "rent_price": "1613"
+        },
+        {
+            "year": "2016",
+            "month": "10",
+            "homeless_adults": "3036",
+            "rent_price": "1628"
+        },
+        {
+            "year": "2016",
+            "month": "11",
+            "homeless_adults": "3024",
+            "rent_price": "1651"
+        },
+        {
+            "year": "2016",
+            "month": "12",
+            "homeless_adults": "3162",
+            "rent_price": "1649"
+        },
+        {
+            "year": "2017",
+            "month": "1",
+            "homeless_adults": "3247",
+            "rent_price": "1647"
+        },
+        {
+            "year": "2017",
+            "month": "2",
+            "homeless_adults": "3310",
+            "rent_price": "1673"
+        },
+        {
+            "year": "2017",
+            "month": "3",
+            "homeless_adults": "3299",
+            "rent_price": "1684"
+        },
+        {
+            "year": "2017",
+            "month": "4",
+            "homeless_adults": "3337",
+            "rent_price": "1684"
+        },
+        {
+            "year": "2017",
+            "month": "5",
+            "homeless_adults": "3327",
+            "rent_price": "1715"
+        },
+        {
+            "year": "2017",
+            "month": "6",
+            "homeless_adults": "3406",
+            "rent_price": "1722"
+        },
+        {
+            "year": "2017",
+            "month": "7",
+            "homeless_adults": "3528",
+            "rent_price": "1744"
+        },
+        {
+            "year": "2017",
+            "month": "8",
+            "homeless_adults": "3527",
+            "rent_price": "1788"
+        },
+        {
+            "year": "2017",
+            "month": "9",
+            "homeless_adults": "3537",
+            "rent_price": "1791"
+        },
+        {
+            "year": "2017",
+            "month": "10",
+            "homeless_adults": "3536",
+            "rent_price": "1801"
+        },
+        {
+            "year": "2017",
+            "month": "11",
+            "homeless_adults": "3691",
+            "rent_price": "1832"
+        },
+        {
+            "year": "2017",
+            "month": "12",
+            "homeless_adults": "3712",
+            "rent_price": "1834"
+        },
+        {
+            "year": "2018",
+            "month": "1",
+            "homeless_adults": "3919",
+            "rent_price": "1842"
+        },
+        {
+            "year": "2018",
+            "month": "2",
+            "homeless_adults": "4021",
+            "rent_price": "1881"
+        },
+        {
+            "year": "2018",
+            "month": "3",
+            "homeless_adults": "4107",
+            "rent_price": "1901"
+        },
+        {
+            "year": "2018",
+            "month": "4",
+            "homeless_adults": "4005",
+            "rent_price": "1910"
+        },
+        {
+            "year": "2018",
+            "month": "5",
+            "homeless_adults": "4062",
+            "rent_price": "1947"
+        },
+        {
+            "year": "2018",
+            "month": "6",
+            "homeless_adults": "4083",
+            "rent_price": "1951"
+        },
+        {
+            "year": "2018",
+            "month": "7",
+            "homeless_adults": "4097",
+            "rent_price": "1946"
+        },
+        {
+            "year": "2018",
+            "month": "8",
+            "homeless_adults": "3944",
+            "rent_price": "1974"
+        },
+        {
+            "year": "2018",
+            "month": "9",
+            "homeless_adults": "3940",
+            "rent_price": "1985"
+        },
+        {
+            "year": "2018",
+            "month": "10",
+            "homeless_adults": "4027",
+            "rent_price": "1976"
+        },
+        {
+            "year": "2018",
+            "month": "11",
+            "homeless_adults": "4129",
+            "rent_price": "1988"
+        },
+        {
+            "year": "2018",
+            "month": "12",
+            "homeless_adults": "4175",
+            "rent_price": "1980"
+        },
+        {
+            "year": "2019",
+            "month": "1",
+            "homeless_adults": "4258",
+            "rent_price": "1991"
+        },
+        {
+            "year": "2019",
+            "month": "2",
+            "homeless_adults": "4304",
+            "rent_price": "2002"
+        },
+        {
+            "year": "2019",
+            "month": "3",
+            "homeless_adults": "4315",
+            "rent_price": "2013"
+        },
+        {
+            "year": "2019",
+            "month": "4",
+            "homeless_adults": "4401",
+            "rent_price": "2035"
+        },
+        {
+            "year": "2019",
+            "month": "5",
+            "homeless_adults": "4367",
+            "rent_price": "2021"
+        },
+        {
+            "year": "2019",
+            "month": "6",
+            "homeless_adults": "4356",
+            "rent_price": "2014"
+        },
+        {
+            "year": "2019",
+            "month": "7",
+            "homeless_adults": "4300",
+            "rent_price": "2026"
+        },
+        {
+            "year": "2019",
+            "month": "8",
+            "homeless_adults": "4312",
+            "rent_price": "2053"
+        },
+        {
+            "year": "2019",
+            "month": "9",
+            "homeless_adults": "4370",
+            "rent_price": "2054"
+        },
+        {
+            "year": "2019",
+            "month": "10",
+            "homeless_adults": "4534",
+            "rent_price": "2055"
+        },
+        {
+            "year": "2019",
+            "month": "11",
+            "homeless_adults": "4509",
+            "rent_price": "2038"
+        },
+        {
+            "year": "2019",
+            "month": "12",
+            "homeless_adults": "4268",
+            "rent_price": "2062"
+        },
+        {
+            "year": "2020",
+            "month": "1",
+            "homeless_adults": "4600",
+            "rent_price": "2074"
+        },
+        {
+            "year": "2020",
+            "month": "2",
+            "homeless_adults": "4550",
+            "rent_price": "2076"
+        },
+        {
+            "year": "2020",
+            "month": "3",
+            "homeless_adults": "4550",
+            "rent_price": "2073"
+        },
+        {
+            "year": "2020",
+            "month": "4",
+            "homeless_adults": "4266",
+            "rent_price": "2020"
+        },
+        {
+            "year": "2020",
+            "month": "5",
+            "homeless_adults": "4164",
+            "rent_price": "2025"
+        }
+    ],
+    "number_homeless": {
+        "Total": 32276,
+        "Working age": 31434,
+        "18-24": 4089,
+        "25-44": 18542,
+        "45-64": 8803,
+        "65": 0,
+        "65+": 0,
+        "PEA": 16712,
+        "STA": 15217,
+        "TEA": 678,
+        "Other": 22,
+        "Male": 19966,
+        "Female": 12310
+    },
+    "emplyoment_rate": {
+        "Total": 60.6,
+        "Men": 67.8,
+        "Women": 53.6
+    },
+    "data_info": {
+        "min_year": 2016,
+        "max_year": 2020,
+        "default_year": 2019
+    }
 }
