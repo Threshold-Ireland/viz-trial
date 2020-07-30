@@ -54,7 +54,7 @@ function asMoney(value) {
   if (num >= 1e6) {
     const unit = num.toString().split('.')[0].length;
     const unitName = unit < 10 ? "million" : "billion";
-    num = (num / ("1e" + (unit-3))).toFixed(3) + " " + unitName;
+    num = (num / ( unit < 10 ? 1e6 : 1e9)).toFixed(3) + " " + unitName;
   }
   return "€ " + num;
 }
