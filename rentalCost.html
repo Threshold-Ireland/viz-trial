@@ -13,32 +13,33 @@
         });
     </script>
     <script type="module">
-        // Embed graphs from the Observable notebook at https://observablehq.com/d/4719b721e353a3fb
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/4719b721e353a3fb.js?v=3";
-
-        // Rent vs. Homelessness data.
-        const graph_inspector = Inspector.into("#rent_vs_homelessness");
-        (new Runtime).module(define, name => name === "chart" ? graph_inspector() : undefined);
-
-        // Legend.
-        const legend_inspector = Inspector.into("#legend");
-        (new Runtime).module(define, name => name === "viewof legend" ? legend_inspector() : undefined);
-
-        // Rent vs. Homelessness data.
-        const increase_inspector = Inspector.into("#increase");
-        (new Runtime).module(define, name => name === "viewof increase" ? increase_inspector() : undefined);
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@lupino3/ireland-homelessness-study.js?v=3";
+    (new Runtime).module(define, name => {
+        if (name === "viewof legend") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-legend")();
+        if (name === "chart") return Inspector.into("#observablehq-d1b06563 .observablehq-chart")();
+        if (name === "viewof increase") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-increase")();
+        if (name === "increase") return Inspector.into("#observablehq-d1b06563 .observablehq-increase")();
+        if (name === "viewof interactive_rent") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_rent")();
+        if (name === "viewof interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_homeless")();
+        if (name === "interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-interactive_homeless")();
+    });
     </script>
-
 </head>
 
 <body>
     <div id="menu"></div>
     <div id="content" class="ms-Fabric ms-font-m">
         <h1>Relationship between rent prices and homelessness</h1>
-        <div id="legend"></div>
-        <div id="rent_vs_homelessness"></div>
-        <div id="increase"></div>
+        <div id="observablehq-d1b06563">
+            <div class="observablehq-viewof-legend"></div>
+            <div class="observablehq-chart"></div>
+            <div class="observablehq-viewof-increase"></div>
+            <div class="observablehq-increase"></div>
+            <div class="observablehq-viewof-interactive_rent"></div>
+            <div class="observablehq-viewof-interactive_homeless"></div>
+            <div class="observablehq-interactive_homeless"></div>
+        </div>
     </div>
 
     <body>
