@@ -1,0 +1,13 @@
+<h1>Relationship between rent prices and income</h1>
+<div id="observablehq-04063d12">
+    <div class="observablehq-key"></div>
+    <div class="observablehq-stacked_chart"></div>
+</div>
+<script type="module">
+    import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@lupino3/ireland-homelessness-study.js?v=3";
+    (new Runtime).module(define, name => {
+        if (name === "key") return Inspector.into("#observablehq-04063d12 .observablehq-key")();
+        if (name === "stacked_chart") return Inspector.into("#observablehq-04063d12 .observablehq-stacked_chart")();
+    });
+</script>
