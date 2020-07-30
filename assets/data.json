@@ -3,57 +3,82 @@
         {
             "year": 2016,
             "direct": {
-                "HAP": 57.69,
+                "HAP": 57690000.0,
                 "RAS": 130998164.56,
-                "charities": 20160,
-                "total": 131018382.25
+                "charities": 112396184,
+                "total": 301084348.56
             },
-            "indirect": 33895506051,
-            "total": 34034749617
+            "indirect": {
+                "lost_tax_revenue": 30611038,
+                "medical_spend": 823159,
+                "justice_spend": 23564368,
+                "total": 54998565
+            },
+            "total": 356082913
         },
         {
             "year": 2017,
             "direct": {
-                "HAP": 152.69,
+                "HAP": 152690000.0,
                 "RAS": 142837781.59,
-                "charities": 20170,
-                "total": 142858104.28
+                "charities": 130829710,
+                "total": 426357491.59000003
             },
-            "indirect": 42109793669,
-            "total": 42255296488
+            "indirect": {
+                "lost_tax_revenue": 36860044,
+                "medical_spend": 797504,
+                "justice_spend": 31266803,
+                "total": 68924351
+            },
+            "total": 495281842
         },
         {
             "year": 2018,
             "direct": {
-                "HAP": 276.6,
+                "HAP": 276600000.0,
                 "RAS": 143336836.63,
-                "charities": 20180,
-                "total": 143357293.23
+                "charities": 129546355,
+                "total": 549483191.63
             },
-            "indirect": 50705395689,
-            "total": 50877343306
+            "indirect": {
+                "lost_tax_revenue": 42831558,
+                "medical_spend": 809965,
+                "justice_spend": 37825162,
+                "total": 81466685
+            },
+            "total": 630949876
         },
         {
             "year": 2019,
             "direct": {
-                "HAP": 382,
+                "HAP": 382000000,
                 "RAS": 134290217.27,
-                "charities": 20190,
-                "total": 134310789.27
+                "charities": 157494908,
+                "total": 673785125.27
             },
-            "indirect": 56820913346,
-            "total": 56955224135
+            "indirect": {
+                "lost_tax_revenue": 45024566,
+                "medical_spend": 796038,
+                "justice_spend": 37825162,
+                "total": 83645766
+            },
+            "total": 757430891
         },
         {
             "year": 2020,
             "direct": {
-                "HAP": 178.5,
-                "RAS": 0,
-                "charities": 20200,
-                "total": 20378.5
+                "HAP": 178500000.0,
+                "RAS": 134290217.27,
+                "charities": 0,
+                "total": 312790217.27
             },
-            "indirect": 23848844843,
-            "total": 23848865221
+            "indirect": {
+                "lost_tax_revenue": 43508612,
+                "medical_spend": 796038,
+                "justice_spend": 37825162,
+                "total": 82129812
+            },
+            "total": 394920029
         }
     ],
     "homeless_vs_rental_price": [
@@ -377,19 +402,19 @@
         }
     ],
     "number_homeless": {
-        "Total": 32276,
-        "Working age": 31434,
-        "18-24": 4089,
-        "25-44": 18542,
-        "45-64": 8803,
+        "Total": 6089,
+        "Working age": 5941,
+        "18-24": 709,
+        "25-44": 3507,
+        "45-64": 1725,
         "65": 0,
         "65+": 0,
-        "PEA": 16712,
-        "STA": 15217,
-        "TEA": 678,
-        "Other": 22,
-        "Male": 19966,
-        "Female": 12310
+        "PEA": 3317,
+        "STA": 2701,
+        "TEA": 137,
+        "Other": 2,
+        "Male": 3868,
+        "Female": 2221
     },
     "emplyoment_rate": {
         "Total": 60.6,
@@ -400,5 +425,1455 @@
         "min_year": 2016,
         "max_year": 2020,
         "default_year": 2019
+    },
+    "dublin_rent_to_earnings": [
+        {
+            "date": "2011-01-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1010",
+            "rent_pct_of_income": "0.33746345538076017"
+        },
+        {
+            "date": "2011-02-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1020",
+            "rent_pct_of_income": "0.3408046777112627"
+        },
+        {
+            "date": "2011-03-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1017",
+            "rent_pct_of_income": "0.33980231101211195"
+        },
+        {
+            "date": "2011-04-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1016",
+            "rent_pct_of_income": "0.3394681887790617"
+        },
+        {
+            "date": "2011-05-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1014",
+            "rent_pct_of_income": "0.3387999443129612"
+        },
+        {
+            "date": "2011-06-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1004",
+            "rent_pct_of_income": "0.3354587219824586"
+        },
+        {
+            "date": "2011-07-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1014",
+            "rent_pct_of_income": "0.3387999443129612"
+        },
+        {
+            "date": "2011-08-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1018",
+            "rent_pct_of_income": "0.3401364332451622"
+        },
+        {
+            "date": "2011-09-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1015",
+            "rent_pct_of_income": "0.3391340665460114"
+        },
+        {
+            "date": "2011-10-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1012",
+            "rent_pct_of_income": "0.33813169984686064"
+        },
+        {
+            "date": "2011-11-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1006",
+            "rent_pct_of_income": "0.3361269664485591"
+        },
+        {
+            "date": "2011-12-01",
+            "median_monthly_earnings": "2992.9166666666665",
+            "rent_price": "1006",
+            "rent_pct_of_income": "0.3361269664485591"
+        },
+        {
+            "date": "2012-01-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1018",
+            "rent_pct_of_income": "0.34146750524109015"
+        },
+        {
+            "date": "2012-02-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1020",
+            "rent_pct_of_income": "0.3421383647798742"
+        },
+        {
+            "date": "2012-03-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1020",
+            "rent_pct_of_income": "0.3421383647798742"
+        },
+        {
+            "date": "2012-04-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1016",
+            "rent_pct_of_income": "0.34079664570230606"
+        },
+        {
+            "date": "2012-05-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1017",
+            "rent_pct_of_income": "0.3411320754716981"
+        },
+        {
+            "date": "2012-06-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1015",
+            "rent_pct_of_income": "0.34046121593291406"
+        },
+        {
+            "date": "2012-07-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1025",
+            "rent_pct_of_income": "0.3438155136268344"
+        },
+        {
+            "date": "2012-08-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1039",
+            "rent_pct_of_income": "0.34851153039832283"
+        },
+        {
+            "date": "2012-09-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1051",
+            "rent_pct_of_income": "0.35253668763102725"
+        },
+        {
+            "date": "2012-10-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1055",
+            "rent_pct_of_income": "0.3538784067085954"
+        },
+        {
+            "date": "2012-11-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1066",
+            "rent_pct_of_income": "0.35756813417190775"
+        },
+        {
+            "date": "2012-12-01",
+            "median_monthly_earnings": "2981.25",
+            "rent_price": "1057",
+            "rent_pct_of_income": "0.3545492662473795"
+        },
+        {
+            "date": "2013-01-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1073",
+            "rent_pct_of_income": "0.3583634845532981"
+        },
+        {
+            "date": "2013-02-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1096",
+            "rent_pct_of_income": "0.3660450876704704"
+        },
+        {
+            "date": "2013-03-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1095",
+            "rent_pct_of_income": "0.3657111049262455"
+        },
+        {
+            "date": "2013-04-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1104",
+            "rent_pct_of_income": "0.36871694962426943"
+        },
+        {
+            "date": "2013-05-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1095",
+            "rent_pct_of_income": "0.3657111049262455"
+        },
+        {
+            "date": "2013-06-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1093",
+            "rent_pct_of_income": "0.3650431394377957"
+        },
+        {
+            "date": "2013-07-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1118",
+            "rent_pct_of_income": "0.3733927080434178"
+        },
+        {
+            "date": "2013-08-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1136",
+            "rent_pct_of_income": "0.37940439743946563"
+        },
+        {
+            "date": "2013-09-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1158",
+            "rent_pct_of_income": "0.38675201781241303"
+        },
+        {
+            "date": "2013-10-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1172",
+            "rent_pct_of_income": "0.3914277762315614"
+        },
+        {
+            "date": "2013-11-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1173",
+            "rent_pct_of_income": "0.39176175897578625"
+        },
+        {
+            "date": "2013-12-01",
+            "median_monthly_earnings": "2994.1666666666665",
+            "rent_price": "1178",
+            "rent_pct_of_income": "0.3934316726969107"
+        },
+        {
+            "date": "2014-01-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1204",
+            "rent_pct_of_income": "0.3999003570538902"
+        },
+        {
+            "date": "2014-02-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1226",
+            "rent_pct_of_income": "0.4072075064352736"
+        },
+        {
+            "date": "2014-03-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1244",
+            "rent_pct_of_income": "0.41318608320186"
+        },
+        {
+            "date": "2014-04-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1256",
+            "rent_pct_of_income": "0.41717180104625096"
+        },
+        {
+            "date": "2014-05-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1262",
+            "rent_pct_of_income": "0.4191646599684464"
+        },
+        {
+            "date": "2014-06-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1267",
+            "rent_pct_of_income": "0.4208253757369426"
+        },
+        {
+            "date": "2014-07-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1279",
+            "rent_pct_of_income": "0.42481109358133357"
+        },
+        {
+            "date": "2014-08-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1292",
+            "rent_pct_of_income": "0.42912895457942374"
+        },
+        {
+            "date": "2014-09-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1311",
+            "rent_pct_of_income": "0.4354396744997094"
+        },
+        {
+            "date": "2014-10-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1320",
+            "rent_pct_of_income": "0.4384289628830026"
+        },
+        {
+            "date": "2014-11-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1329",
+            "rent_pct_of_income": "0.44141825126629575"
+        },
+        {
+            "date": "2014-12-01",
+            "median_monthly_earnings": "3010.75",
+            "rent_price": "1329",
+            "rent_pct_of_income": "0.44141825126629575"
+        },
+        {
+            "date": "2015-01-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1335",
+            "rent_pct_of_income": "0.43991652021089633"
+        },
+        {
+            "date": "2015-02-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1351",
+            "rent_pct_of_income": "0.445188927943761"
+        },
+        {
+            "date": "2015-03-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1349",
+            "rent_pct_of_income": "0.4445298769771529"
+        },
+        {
+            "date": "2015-04-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1364",
+            "rent_pct_of_income": "0.44947275922671354"
+        },
+        {
+            "date": "2015-05-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1366",
+            "rent_pct_of_income": "0.45013181019332166"
+        },
+        {
+            "date": "2015-06-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1375",
+            "rent_pct_of_income": "0.45309753954305804"
+        },
+        {
+            "date": "2015-07-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1392",
+            "rent_pct_of_income": "0.45869947275922673"
+        },
+        {
+            "date": "2015-08-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1412",
+            "rent_pct_of_income": "0.46528998242530756"
+        },
+        {
+            "date": "2015-09-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1425",
+            "rent_pct_of_income": "0.4695738137082601"
+        },
+        {
+            "date": "2015-10-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1435",
+            "rent_pct_of_income": "0.47286906854130056"
+        },
+        {
+            "date": "2015-11-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1431",
+            "rent_pct_of_income": "0.4715509666080844"
+        },
+        {
+            "date": "2015-12-01",
+            "median_monthly_earnings": "3034.6666666666665",
+            "rent_price": "1439",
+            "rent_pct_of_income": "0.4741871704745167"
+        },
+        {
+            "date": "2016-01-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1461",
+            "rent_pct_of_income": "0.472764534570165"
+        },
+        {
+            "date": "2016-02-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1459",
+            "rent_pct_of_income": "0.4721173551936145"
+        },
+        {
+            "date": "2016-03-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1473",
+            "rent_pct_of_income": "0.4766476108294682"
+        },
+        {
+            "date": "2016-04-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1484",
+            "rent_pct_of_income": "0.48020709740049616"
+        },
+        {
+            "date": "2016-05-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1529",
+            "rent_pct_of_income": "0.4947686333728832"
+        },
+        {
+            "date": "2016-06-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1547",
+            "rent_pct_of_income": "0.500593247761838"
+        },
+        {
+            "date": "2016-07-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1546",
+            "rent_pct_of_income": "0.5002696580735627"
+        },
+        {
+            "date": "2016-08-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1580",
+            "rent_pct_of_income": "0.5112717074749218"
+        },
+        {
+            "date": "2016-09-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1613",
+            "rent_pct_of_income": "0.5219501671880056"
+        },
+        {
+            "date": "2016-10-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1628",
+            "rent_pct_of_income": "0.5268040125121346"
+        },
+        {
+            "date": "2016-11-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1651",
+            "rent_pct_of_income": "0.5342465753424658"
+        },
+        {
+            "date": "2016-12-01",
+            "median_monthly_earnings": "3090.3333333333335",
+            "rent_price": "1649",
+            "rent_pct_of_income": "0.5335993959659152"
+        },
+        {
+            "date": "2017-01-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1647",
+            "rent_pct_of_income": "0.5191898494759241"
+        },
+        {
+            "date": "2017-02-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1673",
+            "rent_pct_of_income": "0.5273859248167704"
+        },
+        {
+            "date": "2017-03-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1684",
+            "rent_pct_of_income": "0.5308534951532824"
+        },
+        {
+            "date": "2017-04-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1684",
+            "rent_pct_of_income": "0.5308534951532824"
+        },
+        {
+            "date": "2017-05-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1715",
+            "rent_pct_of_income": "0.540625738828907"
+        },
+        {
+            "date": "2017-06-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1722",
+            "rent_pct_of_income": "0.5428323744975964"
+        },
+        {
+            "date": "2017-07-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1744",
+            "rent_pct_of_income": "0.5497675151706202"
+        },
+        {
+            "date": "2017-08-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1788",
+            "rent_pct_of_income": "0.563637796516668"
+        },
+        {
+            "date": "2017-09-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1791",
+            "rent_pct_of_income": "0.5645834975175349"
+        },
+        {
+            "date": "2017-10-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1801",
+            "rent_pct_of_income": "0.5677358341870912"
+        },
+        {
+            "date": "2017-11-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1832",
+            "rent_pct_of_income": "0.5775080778627157"
+        },
+        {
+            "date": "2017-12-01",
+            "median_monthly_earnings": "3172.25",
+            "rent_price": "1834",
+            "rent_pct_of_income": "0.578138545196627"
+        },
+        {
+            "date": "2018-01-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1842",
+            "rent_pct_of_income": "0.5609013398294762"
+        },
+        {
+            "date": "2018-02-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1881",
+            "rent_pct_of_income": "0.5727771010962242"
+        },
+        {
+            "date": "2018-03-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1901",
+            "rent_pct_of_income": "0.5788672350791717"
+        },
+        {
+            "date": "2018-04-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1910",
+            "rent_pct_of_income": "0.5816077953714982"
+        },
+        {
+            "date": "2018-05-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1947",
+            "rent_pct_of_income": "0.5928745432399513"
+        },
+        {
+            "date": "2018-06-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1951",
+            "rent_pct_of_income": "0.5940925700365408"
+        },
+        {
+            "date": "2018-07-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1946",
+            "rent_pct_of_income": "0.5925700365408039"
+        },
+        {
+            "date": "2018-08-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1974",
+            "rent_pct_of_income": "0.6010962241169305"
+        },
+        {
+            "date": "2018-09-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1985",
+            "rent_pct_of_income": "0.6044457978075518"
+        },
+        {
+            "date": "2018-10-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1976",
+            "rent_pct_of_income": "0.6017052375152253"
+        },
+        {
+            "date": "2018-11-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1988",
+            "rent_pct_of_income": "0.6053593179049939"
+        },
+        {
+            "date": "2018-12-01",
+            "median_monthly_earnings": "3284.0",
+            "rent_price": "1980",
+            "rent_pct_of_income": "0.6029232643118149"
+        }
+    ],
+    "dublin_units_available": {
+        "0": {
+            "units_available": 2843,
+            "year": 2006,
+            "rent_price": 1219
+        },
+        "1": {
+            "units_available": 2814,
+            "year": 2006,
+            "rent_price": 1230
+        },
+        "2": {
+            "units_available": 3289,
+            "year": 2006,
+            "rent_price": 1237
+        },
+        "3": {
+            "units_available": 4091,
+            "year": 2006,
+            "rent_price": 1237
+        },
+        "4": {
+            "units_available": 4818,
+            "year": 2006,
+            "rent_price": 1248
+        },
+        "5": {
+            "units_available": 3869,
+            "year": 2006,
+            "rent_price": 1252
+        },
+        "6": {
+            "units_available": 4796,
+            "year": 2006,
+            "rent_price": 1267
+        },
+        "7": {
+            "units_available": 5606,
+            "year": 2006,
+            "rent_price": 1284
+        },
+        "8": {
+            "units_available": 5420,
+            "year": 2006,
+            "rent_price": 1312
+        },
+        "9": {
+            "units_available": 5074,
+            "year": 2006,
+            "rent_price": 1330
+        },
+        "10": {
+            "units_available": 4399,
+            "year": 2006,
+            "rent_price": 1325
+        },
+        "11": {
+            "units_available": 3480,
+            "year": 2006,
+            "rent_price": 1324
+        },
+        "12": {
+            "units_available": 2163,
+            "year": 2007,
+            "rent_price": 1342
+        },
+        "13": {
+            "units_available": 1860,
+            "year": 2007,
+            "rent_price": 1373
+        },
+        "14": {
+            "units_available": 1698,
+            "year": 2007,
+            "rent_price": 1400
+        },
+        "15": {
+            "units_available": 1730,
+            "year": 2007,
+            "rent_price": 1404
+        },
+        "16": {
+            "units_available": 2080,
+            "year": 2007,
+            "rent_price": 1405
+        },
+        "17": {
+            "units_available": 2370,
+            "year": 2007,
+            "rent_price": 1404
+        },
+        "18": {
+            "units_available": 2689,
+            "year": 2007,
+            "rent_price": 1413
+        },
+        "19": {
+            "units_available": 2588,
+            "year": 2007,
+            "rent_price": 1435
+        },
+        "20": {
+            "units_available": 2349,
+            "year": 2007,
+            "rent_price": 1449
+        },
+        "21": {
+            "units_available": 2326,
+            "year": 2007,
+            "rent_price": 1452
+        },
+        "22": {
+            "units_available": 2791,
+            "year": 2007,
+            "rent_price": 1442
+        },
+        "23": {
+            "units_available": 3382,
+            "year": 2007,
+            "rent_price": 1439
+        },
+        "24": {
+            "units_available": 3309,
+            "year": 2008,
+            "rent_price": 1456
+        },
+        "25": {
+            "units_available": 3686,
+            "year": 2008,
+            "rent_price": 1449
+        },
+        "26": {
+            "units_available": 3899,
+            "year": 2008,
+            "rent_price": 1430
+        },
+        "27": {
+            "units_available": 3941,
+            "year": 2008,
+            "rent_price": 1420
+        },
+        "28": {
+            "units_available": 4165,
+            "year": 2008,
+            "rent_price": 1400
+        },
+        "29": {
+            "units_available": 4747,
+            "year": 2008,
+            "rent_price": 1380
+        },
+        "30": {
+            "units_available": 5251,
+            "year": 2008,
+            "rent_price": 1382
+        },
+        "31": {
+            "units_available": 5700,
+            "year": 2008,
+            "rent_price": 1376
+        },
+        "32": {
+            "units_available": 5588,
+            "year": 2008,
+            "rent_price": 1368
+        },
+        "33": {
+            "units_available": 5724,
+            "year": 2008,
+            "rent_price": 1336
+        },
+        "34": {
+            "units_available": 6236,
+            "year": 2008,
+            "rent_price": 1277
+        },
+        "35": {
+            "units_available": 6989,
+            "year": 2008,
+            "rent_price": 1236
+        },
+        "36": {
+            "units_available": 6281,
+            "year": 2009,
+            "rent_price": 1246
+        },
+        "37": {
+            "units_available": 6686,
+            "year": 2009,
+            "rent_price": 1203
+        },
+        "38": {
+            "units_available": 6781,
+            "year": 2009,
+            "rent_price": 1174
+        },
+        "39": {
+            "units_available": 7037,
+            "year": 2009,
+            "rent_price": 1150
+        },
+        "40": {
+            "units_available": 7394,
+            "year": 2009,
+            "rent_price": 1129
+        },
+        "41": {
+            "units_available": 7748,
+            "year": 2009,
+            "rent_price": 1107
+        },
+        "42": {
+            "units_available": 8264,
+            "year": 2009,
+            "rent_price": 1089
+        },
+        "43": {
+            "units_available": 7938,
+            "year": 2009,
+            "rent_price": 1091
+        },
+        "44": {
+            "units_available": 7408,
+            "year": 2009,
+            "rent_price": 1081
+        },
+        "45": {
+            "units_available": 6903,
+            "year": 2009,
+            "rent_price": 1064
+        },
+        "46": {
+            "units_available": 6707,
+            "year": 2009,
+            "rent_price": 1033
+        },
+        "47": {
+            "units_available": 6851,
+            "year": 2009,
+            "rent_price": 1012
+        },
+        "48": {
+            "units_available": 6360,
+            "year": 2010,
+            "rent_price": 1040
+        },
+        "49": {
+            "units_available": 5540,
+            "year": 2010,
+            "rent_price": 1030
+        },
+        "50": {
+            "units_available": 5603,
+            "year": 2010,
+            "rent_price": 1029
+        },
+        "51": {
+            "units_available": 5679,
+            "year": 2010,
+            "rent_price": 1023
+        },
+        "52": {
+            "units_available": 5813,
+            "year": 2010,
+            "rent_price": 1013
+        },
+        "53": {
+            "units_available": 6477,
+            "year": 2010,
+            "rent_price": 1001
+        },
+        "54": {
+            "units_available": 7129,
+            "year": 2010,
+            "rent_price": 1001
+        },
+        "55": {
+            "units_available": 6516,
+            "year": 2010,
+            "rent_price": 1018
+        },
+        "56": {
+            "units_available": 5584,
+            "year": 2010,
+            "rent_price": 1020
+        },
+        "57": {
+            "units_available": 5018,
+            "year": 2010,
+            "rent_price": 1018
+        },
+        "58": {
+            "units_available": 4464,
+            "year": 2010,
+            "rent_price": 1003
+        },
+        "59": {
+            "units_available": 4797,
+            "year": 2010,
+            "rent_price": 992
+        },
+        "60": {
+            "units_available": 4301,
+            "year": 2011,
+            "rent_price": 1010
+        },
+        "61": {
+            "units_available": 3938,
+            "year": 2011,
+            "rent_price": 1020
+        },
+        "62": {
+            "units_available": 4473,
+            "year": 2011,
+            "rent_price": 1017
+        },
+        "63": {
+            "units_available": 4349,
+            "year": 2011,
+            "rent_price": 1016
+        },
+        "64": {
+            "units_available": 4219,
+            "year": 2011,
+            "rent_price": 1014
+        },
+        "65": {
+            "units_available": 5308,
+            "year": 2011,
+            "rent_price": 1004
+        },
+        "66": {
+            "units_available": 5765,
+            "year": 2011,
+            "rent_price": 1014
+        },
+        "67": {
+            "units_available": 5440,
+            "year": 2011,
+            "rent_price": 1018
+        },
+        "68": {
+            "units_available": 4926,
+            "year": 2011,
+            "rent_price": 1015
+        },
+        "69": {
+            "units_available": 4258,
+            "year": 2011,
+            "rent_price": 1012
+        },
+        "70": {
+            "units_available": 3513,
+            "year": 2011,
+            "rent_price": 1006
+        },
+        "71": {
+            "units_available": 3687,
+            "year": 2011,
+            "rent_price": 1006
+        },
+        "72": {
+            "units_available": 3457,
+            "year": 2012,
+            "rent_price": 1018
+        },
+        "73": {
+            "units_available": 3495,
+            "year": 2012,
+            "rent_price": 1020
+        },
+        "74": {
+            "units_available": 3628,
+            "year": 2012,
+            "rent_price": 1020
+        },
+        "75": {
+            "units_available": 3672,
+            "year": 2012,
+            "rent_price": 1016
+        },
+        "76": {
+            "units_available": 4018,
+            "year": 2012,
+            "rent_price": 1017
+        },
+        "77": {
+            "units_available": 4579,
+            "year": 2012,
+            "rent_price": 1015
+        },
+        "78": {
+            "units_available": 4761,
+            "year": 2012,
+            "rent_price": 1025
+        },
+        "79": {
+            "units_available": 4212,
+            "year": 2012,
+            "rent_price": 1039
+        },
+        "80": {
+            "units_available": 3387,
+            "year": 2012,
+            "rent_price": 1051
+        },
+        "81": {
+            "units_available": 2654,
+            "year": 2012,
+            "rent_price": 1055
+        },
+        "82": {
+            "units_available": 2199,
+            "year": 2012,
+            "rent_price": 1066
+        },
+        "83": {
+            "units_available": 2447,
+            "year": 2012,
+            "rent_price": 1057
+        },
+        "84": {
+            "units_available": 2222,
+            "year": 2013,
+            "rent_price": 1073
+        },
+        "85": {
+            "units_available": 2103,
+            "year": 2013,
+            "rent_price": 1096
+        },
+        "86": {
+            "units_available": 2219,
+            "year": 2013,
+            "rent_price": 1095
+        },
+        "87": {
+            "units_available": 1940,
+            "year": 2013,
+            "rent_price": 1104
+        },
+        "88": {
+            "units_available": 2191,
+            "year": 2013,
+            "rent_price": 1095
+        },
+        "89": {
+            "units_available": 2406,
+            "year": 2013,
+            "rent_price": 1093
+        },
+        "90": {
+            "units_available": 2717,
+            "year": 2013,
+            "rent_price": 1118
+        },
+        "91": {
+            "units_available": 2394,
+            "year": 2013,
+            "rent_price": 1136
+        },
+        "92": {
+            "units_available": 1892,
+            "year": 2013,
+            "rent_price": 1158
+        },
+        "93": {
+            "units_available": 1771,
+            "year": 2013,
+            "rent_price": 1172
+        },
+        "94": {
+            "units_available": 1803,
+            "year": 2013,
+            "rent_price": 1173
+        },
+        "95": {
+            "units_available": 1884,
+            "year": 2013,
+            "rent_price": 1178
+        },
+        "96": {
+            "units_available": 1634,
+            "year": 2014,
+            "rent_price": 1204
+        },
+        "97": {
+            "units_available": 1445,
+            "year": 2014,
+            "rent_price": 1226
+        },
+        "98": {
+            "units_available": 1589,
+            "year": 2014,
+            "rent_price": 1244
+        },
+        "99": {
+            "units_available": 1674,
+            "year": 2014,
+            "rent_price": 1256
+        },
+        "100": {
+            "units_available": 1864,
+            "year": 2014,
+            "rent_price": 1262
+        },
+        "101": {
+            "units_available": 2161,
+            "year": 2014,
+            "rent_price": 1267
+        },
+        "102": {
+            "units_available": 2311,
+            "year": 2014,
+            "rent_price": 1279
+        },
+        "103": {
+            "units_available": 2000,
+            "year": 2014,
+            "rent_price": 1292
+        },
+        "104": {
+            "units_available": 1980,
+            "year": 2014,
+            "rent_price": 1311
+        },
+        "105": {
+            "units_available": 1820,
+            "year": 2014,
+            "rent_price": 1320
+        },
+        "106": {
+            "units_available": 1634,
+            "year": 2014,
+            "rent_price": 1329
+        },
+        "107": {
+            "units_available": 1800,
+            "year": 2014,
+            "rent_price": 1329
+        },
+        "108": {
+            "units_available": 1699,
+            "year": 2015,
+            "rent_price": 1335
+        },
+        "109": {
+            "units_available": 1785,
+            "year": 2015,
+            "rent_price": 1351
+        },
+        "110": {
+            "units_available": 1819,
+            "year": 2015,
+            "rent_price": 1349
+        },
+        "111": {
+            "units_available": 1799,
+            "year": 2015,
+            "rent_price": 1364
+        },
+        "112": {
+            "units_available": 1639,
+            "year": 2015,
+            "rent_price": 1366
+        },
+        "113": {
+            "units_available": 2065,
+            "year": 2015,
+            "rent_price": 1375
+        },
+        "114": {
+            "units_available": 2161,
+            "year": 2015,
+            "rent_price": 1392
+        },
+        "115": {
+            "units_available": 1750,
+            "year": 2015,
+            "rent_price": 1412
+        },
+        "116": {
+            "units_available": 1777,
+            "year": 2015,
+            "rent_price": 1425
+        },
+        "117": {
+            "units_available": 1624,
+            "year": 2015,
+            "rent_price": 1435
+        },
+        "118": {
+            "units_available": 1589,
+            "year": 2015,
+            "rent_price": 1431
+        },
+        "119": {
+            "units_available": 1774,
+            "year": 2015,
+            "rent_price": 1439
+        },
+        "120": {
+            "units_available": 1433,
+            "year": 2016,
+            "rent_price": 1461
+        },
+        "121": {
+            "units_available": 1392,
+            "year": 2016,
+            "rent_price": 1459
+        },
+        "122": {
+            "units_available": 1505,
+            "year": 2016,
+            "rent_price": 1473
+        },
+        "123": {
+            "units_available": 1418,
+            "year": 2016,
+            "rent_price": 1484
+        },
+        "124": {
+            "units_available": 1101,
+            "year": 2016,
+            "rent_price": 1529
+        },
+        "125": {
+            "units_available": 1611,
+            "year": 2016,
+            "rent_price": 1547
+        },
+        "126": {
+            "units_available": 1636,
+            "year": 2016,
+            "rent_price": 1546
+        },
+        "127": {
+            "units_available": 1413,
+            "year": 2016,
+            "rent_price": 1580
+        },
+        "128": {
+            "units_available": 1478,
+            "year": 2016,
+            "rent_price": 1613
+        },
+        "129": {
+            "units_available": 1409,
+            "year": 2016,
+            "rent_price": 1628
+        },
+        "130": {
+            "units_available": 1500,
+            "year": 2016,
+            "rent_price": 1651
+        },
+        "131": {
+            "units_available": 1749,
+            "year": 2016,
+            "rent_price": 1649
+        },
+        "132": {
+            "units_available": 1506,
+            "year": 2017,
+            "rent_price": 1647
+        },
+        "133": {
+            "units_available": 1574,
+            "year": 2017,
+            "rent_price": 1673
+        },
+        "134": {
+            "units_available": 1541,
+            "year": 2017,
+            "rent_price": 1684
+        },
+        "135": {
+            "units_available": 1422,
+            "year": 2017,
+            "rent_price": 1684
+        },
+        "136": {
+            "units_available": 1074,
+            "year": 2017,
+            "rent_price": 1715
+        },
+        "137": {
+            "units_available": 1542,
+            "year": 2017,
+            "rent_price": 1722
+        },
+        "138": {
+            "units_available": 1522,
+            "year": 2017,
+            "rent_price": 1744
+        },
+        "139": {
+            "units_available": 1121,
+            "year": 2017,
+            "rent_price": 1788
+        },
+        "140": {
+            "units_available": 1285,
+            "year": 2017,
+            "rent_price": 1791
+        },
+        "141": {
+            "units_available": 1208,
+            "year": 2017,
+            "rent_price": 1801
+        },
+        "142": {
+            "units_available": 1296,
+            "year": 2017,
+            "rent_price": 1832
+        },
+        "143": {
+            "units_available": 1551,
+            "year": 2017,
+            "rent_price": 1834
+        },
+        "144": {
+            "units_available": 1351,
+            "year": 2018,
+            "rent_price": 1842
+        },
+        "145": {
+            "units_available": 1339,
+            "year": 2018,
+            "rent_price": 1881
+        },
+        "146": {
+            "units_available": 1365,
+            "year": 2018,
+            "rent_price": 1901
+        },
+        "147": {
+            "units_available": 1265,
+            "year": 2018,
+            "rent_price": 1910
+        },
+        "148": {
+            "units_available": 1312,
+            "year": 2018,
+            "rent_price": 1947
+        },
+        "149": {
+            "units_available": 1496,
+            "year": 2018,
+            "rent_price": 1951
+        },
+        "150": {
+            "units_available": 1514,
+            "year": 2018,
+            "rent_price": 1946
+        },
+        "151": {
+            "units_available": 1397,
+            "year": 2018,
+            "rent_price": 1974
+        },
+        "152": {
+            "units_available": 1611,
+            "year": 2018,
+            "rent_price": 1985
+        },
+        "153": {
+            "units_available": 1525,
+            "year": 2018,
+            "rent_price": 1976
+        },
+        "154": {
+            "units_available": 1379,
+            "year": 2018,
+            "rent_price": 1988
+        },
+        "155": {
+            "units_available": 1816,
+            "year": 2018,
+            "rent_price": 1980
+        },
+        "156": {
+            "units_available": 1600,
+            "year": 2019,
+            "rent_price": 1991
+        },
+        "157": {
+            "units_available": 1358,
+            "year": 2019,
+            "rent_price": 2002
+        },
+        "158": {
+            "units_available": 1534,
+            "year": 2019,
+            "rent_price": 2013
+        },
+        "159": {
+            "units_available": 1495,
+            "year": 2019,
+            "rent_price": 2035
+        },
+        "160": {
+            "units_available": 1213,
+            "year": 2019,
+            "rent_price": 2021
+        },
+        "161": {
+            "units_available": 1642,
+            "year": 2019,
+            "rent_price": 2014
+        },
+        "162": {
+            "units_available": 1691,
+            "year": 2019,
+            "rent_price": 2026
+        },
+        "163": {
+            "units_available": 1541,
+            "year": 2019,
+            "rent_price": 2053
+        },
+        "164": {
+            "units_available": 1782,
+            "year": 2019,
+            "rent_price": 2054
+        },
+        "165": {
+            "units_available": 1684,
+            "year": 2019,
+            "rent_price": 2055
+        },
+        "166": {
+            "units_available": 1431,
+            "year": 2019,
+            "rent_price": 2038
+        },
+        "167": {
+            "units_available": 2023,
+            "year": 2019,
+            "rent_price": 2062
+        },
+        "168": {
+            "units_available": 1736,
+            "year": 2020,
+            "rent_price": 2074
+        },
+        "169": {
+            "units_available": 1587,
+            "year": 2020,
+            "rent_price": 2076
+        },
+        "170": {
+            "units_available": 1947,
+            "year": 2020,
+            "rent_price": 2073
+        },
+        "171": {
+            "units_available": 2172,
+            "year": 2020,
+            "rent_price": 2020
+        },
+        "172": {
+            "units_available": 2044,
+            "year": 2020,
+            "rent_price": 2025
+        },
+        "173": {
+            "units_available": 2410,
+            "year": 2020,
+            "rent_price": 2023
+        }
     }
 }
