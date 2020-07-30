@@ -2,26 +2,26 @@
 <div>
     <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
             onchange="yearSelected(this)">
-            {{#each yearSelects}}
-                <option autocomplete="off" value="{{data}}" {{#if selected}} selected="{{selected}}" {{/if}} >{{year}} </option>
+            {{#each yearSelectData}}
+                <option autocomplete="off" value="{{year}}" {{#if selected}} selected="{{selected}}" {{/if}} >{{year}} </option>
             {{/each}}
-        </select> is/was <span class="em" id="data-cost">{{money initialSelect.total}}</span></p>
+        </select> is/was <span class="em" id="data-cost">{{money currentSelect.total}}</span></p>
 </div>
 <div>
     <p>This cost is composed of
     <p>
-        <span id="data-direct-cost">{{money initialSelect.direct.total}}</span> of <a href=""
+        <span id="data-direct-cost">{{money currentSelect.direct.total}}</span> of <a href=""
             class="hoverTooltip">direct
-            cost<span id="data-direct-cost-breakdown">{{money initialSelect.direct.HAP}} in Housing assistance
-                {{money initialSelect.direct.RAS}} in RAS cost
-                {{money initialSelect.direct.charities}} for the charitable sector
+            cost<span id="data-direct-cost-breakdown">{{money currentSelect.direct.HAP}} in Housing assistance
+                {{money currentSelect.direct.RAS}} in RAS cost
+                {{money currentSelect.direct.charities}} for the charitable sector
             </span></a>, and</p>
     <p>
-        <span id="data-indirect-cost">{{money initialSelect.indirect.total}}</span> of
+        <span id="data-indirect-cost">{{money currentSelect.indirect.total}}</span> of
         <a href="" class="hoverTooltip">indirect cost
-            <span id="data-indirect-cost-breakdown">{{money initialSelect.indirect.lost_tax_revenue}} in lost tax revenue from employment
-                {{money initialSelect.indirect.medical_spend}} in additional medical costs
-                {{money initialSelect.indirect.justice_spend}} in additional costs to the justice system
+            <span id="data-indirect-cost-breakdown">{{money currentSelect.indirect.lost_tax_revenue}} in lost tax revenue from employment
+                {{money currentSelect.indirect.medical_spend}} in additional medical costs
+                {{money currentSelect.indirect.justice_spend}} in additional costs to the justice system
             </span></a>.</p>
     </p>
 </div>
