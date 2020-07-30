@@ -1,31 +1,36 @@
-
-        <h1>The cost of Homelessness in Ireland</h1>
-        <div>
-            <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
-                    onchange="yearSelected(this)">
-                    {{#each yearSelects}}
-                    <option value="{{data}}" selected="{{selected}}">{{year}} </option>
-                    {{/each}}
-                </select> is/was <span class="em" id="data-cost">{{money initialSelect.total}}</span></p>
-        </div>
-        <div>
-            <p>This cost is composed of
-            <p><span id="data-direct-cost">{{money initialSelect.direct.total}}</span> of <a href="" class="hoverTooltip">direct cost<span
-                        id="data-direct-cost-breakdown">
-                            {{#if initialSelect.direct.HAP}}
-                                {{money initialSelect.direct.HAP}} in Housing assistance\n
-                            {{/if}}
-                             {{#if initialSelect.direct.RAS}}
-                                {{money initialSelect.direct.RAS}} in RAS cost\n
-                            {{/if}}
-                             {{#if initialSelect.direct.charities}}
-                                {{money initialSelect.direct.charities}} for the charitable sector\n
-                            {{/if}}
-                        </span></a>, and</p>
-            <p><span id="data-indirect-cost">{{money initialSelect.indirect}}</span> of <a href="" class="hoverTooltip">indirect cost<span
-                        id="data-indirect-cost-breakdown"></span></a>.</p>
-            </p>
-        </div>
-        <div id="human-costs">
-            <p>And incalculable human cost, as per the following stories: <span id="link-list"></span></p>
-        </div>
+<h1>The cost of Homelessness in Ireland</h1>
+<div>
+    <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
+            onchange="yearSelected(this)">
+            {{#each yearSelects}}
+                <option autocomplete="off" value="{{data}}" {{#if selected}} selected="{{selected}}" {{/if}} >{{year}} </option>
+            {{/each}}
+        </select> is/was <span class="em" id="data-cost">{{money initialSelect.total}}</span></p>
+</div>
+<div>
+    <p>This cost is composed of
+    <p>
+        <span id="data-direct-cost">{{money initialSelect.direct.total}}</span> of <a href=""
+            class="hoverTooltip">direct
+            cost<span id="data-direct-cost-breakdown">{{money initialSelect.direct.HAP}} in Housing assistance
+                {{money initialSelect.direct.RAS}} in RAS cost
+                {{money initialSelect.direct.charities}} for the charitable sector
+            </span></a>, and</p>
+    <p>
+        <span id="data-indirect-cost">{{money initialSelect.indirect.total}}</span> of
+        <a href="" class="hoverTooltip">indirect cost
+            <span id="data-indirect-cost-breakdown">{{money initialSelect.indirect.lost_tax_revenue}} in lost tax revenue from employment
+                {{money initialSelect.indirect.medical_spend}} in additional medical costs
+                {{money initialSelect.indirect.justice_spend}} in additional costs to the justice system
+            </span></a>.</p>
+    </p>
+</div>
+{{#if links}}
+    <div id="human-costs">
+        <p>And incalculable human cost, as per the following stories:
+            {{#each links}}
+                <a href="{{link}}">{{title}}</a>
+            {{/each}}
+        </p>
+    </div>
+{{/if}}

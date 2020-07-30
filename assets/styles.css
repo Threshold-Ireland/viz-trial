@@ -97,3 +97,7 @@ a.hoverTooltip:hover span {
     text-decoration: none;
     white-space: pre-line;
 }
+
+a:not(:last-of-type):after {
+    content: ',';
+}

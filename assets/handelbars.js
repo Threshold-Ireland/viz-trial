@@ -52,6 +52,7 @@ function showPage(page) {
   var html = page({
     yearSelects: getHomeData(),
     initialSelect: initialSelect,
+    // links: [{link: "#", title:'test'}, {link: "#", title:'test2'}]
   });
   $("#page").html(html);
 }
