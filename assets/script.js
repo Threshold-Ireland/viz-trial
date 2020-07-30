@@ -57,15 +57,20 @@ function populateDataFromYear(yearData) {
   document.getElementById("data-direct-cost").textContent = asMoney(
     yearData.direct.total
   );
-  const costBreakdown = [
+  const directCostBreakdown = [
     `${asMoney(yearData.direct.HAP)} in Housing assistance`,
     `${asMoney(yearData.direct.RAS)} in RAS cost`,
     `${asMoney(yearData.direct.charities)} for the charitable sector`,
   ];
-  document.getElementById("data-direct-cost-breakdown").textContent = costBreakdown.join("\n");
-  document.getElementById("data-indirect-cost").textContent = asMoney(yearData.indirect);
-  // data currently not available
-  // document.getElementById("data-indirect-cost-breakdown").textContent = `${yearData.indirect.revenue} lost in revenue\n${yearData.indirect.medical} in medical cost\n${yearData.indirect.juridical} in juridical cost`;
+  document.getElementById("data-direct-cost-breakdown").textContent = directCostBreakdown.join("\n");
+  const indirectCostBreakdown = [
+    `${asMoney(yearData.indirect.lost_tax_revenue)} in lost tax revenue from employment`,
+    `${asMoney(yearData.indirect.medical_spend)} in additional medical costs`,
+    `${asMoney(yearData.indirect.justice_spend)} in additional costs to the justice system`,
+  ];
+    
+  document.getElementById("data-indirect-cost").textContent = asMoney(yearData.indirect.total);
+  document.getElementById("data-indirect-cost-breakdown").textContent = indirectCostBreakdown.join("\n");  
 }
 
 function populateLinkList(links) {
