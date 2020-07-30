@@ -71,3 +71,8 @@ a.hoverTooltip:hover span {
     text-decoration: none;
     white-space: pre-line;
 }
+
+div#embed1 {
+    margin: auto;
+    width:40%;
+}
