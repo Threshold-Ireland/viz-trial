@@ -12,16 +12,28 @@
             $('#menu').load('menu.html');
         });
     </script>
+    <script type="module">
+        // Embed graphs from the Observable notebook at https://observablehq.com/d/4719b721e353a3fb
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/4719b721e353a3fb.js?v=3";
+
+        // Rent vs. Homelessness data.
+        const graph_inspector = Inspector.into("#rent_vs_homelessness");
+        (new Runtime).module(define, name => name === "chart" ? graph_inspector() : undefined);
+
+        // Legend.
+        const legend_inspector = Inspector.into("#legend");
+        (new Runtime).module(define, name => name === "viewof legend" ? legend_inspector() : undefined);
+    </script>
 
 </head>
 
 <body>
     <div id="menu"></div>
     <div id="content" class="ms-Fabric ms-font-m">
-        <h1>How rental cost relate to income & homelessness</h1>
-        <div id="chart"></div>
-        <div id="context">Each additional 100 Euro on rent for a current rent of <select id="select-current-rent"></select> knocks
-            <span id="data-knocked-people">XXX</span> out of the market </div>
+        <h1>Relationship between rent prices and homelessness</h1>
+        <div id="legend"></div>
+        <div id="rent_vs_homelessness"></div>
     </div>
 
     <body>
