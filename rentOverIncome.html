@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Rent vs. income</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu').load('menu.html');
+        });
+    </script>
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@lupino3/ireland-homelessness-study.js?v=3";
+        (new Runtime).module(define, name => {
+            if (name === "key") return Inspector.into("#observablehq-04063d12 .observablehq-key")();
+            if (name === "stacked_chart") return Inspector.into("#observablehq-04063d12 .observablehq-stacked_chart")();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="menu"></div>
+    <div id="content" class="ms-Fabric ms-font-m">
+        <h1>Relationship between rent prices and income</h1>
+        <div id="observablehq-04063d12">
+            <div class="observablehq-key"></div>
+            <div class="observablehq-stacked_chart"></div>
+        </div>
+    </div>
+<body>
+
+</html>

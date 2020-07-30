@@ -12,16 +12,34 @@
             $('#menu').load('menu.html');
         });
     </script>
-
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@lupino3/ireland-homelessness-study.js?v=3";
+    (new Runtime).module(define, name => {
+        if (name === "viewof legend") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-legend")();
+        if (name === "chart") return Inspector.into("#observablehq-d1b06563 .observablehq-chart")();
+        if (name === "viewof increase") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-increase")();
+        if (name === "increase") return Inspector.into("#observablehq-d1b06563 .observablehq-increase")();
+        if (name === "viewof interactive_rent") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_rent")();
+        if (name === "viewof interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-viewof-interactive_homeless")();
+        if (name === "interactive_homeless") return Inspector.into("#observablehq-d1b06563 .observablehq-interactive_homeless")();
+    });
+    </script>
 </head>
 
 <body>
     <div id="menu"></div>
     <div id="content" class="ms-Fabric ms-font-m">
-        <h1>How rental cost relate to income & homelessness</h1>
-        <div id="chart"></div>
-        <div id="context">Each additional 100 Euro on rent for a current rent of <select id="select-current-rent"></select> knocks
-            <span id="data-knocked-people">XXX</span> out of the market </div>
+        <h1>Relationship between rent prices and homelessness</h1>
+        <div id="observablehq-d1b06563">
+            <div class="observablehq-viewof-legend"></div>
+            <div class="observablehq-chart"></div>
+            <div class="observablehq-viewof-increase"></div>
+            <div class="observablehq-increase"></div>
+            <div class="observablehq-viewof-interactive_rent"></div>
+            <div class="observablehq-viewof-interactive_homeless"></div>
+            <div class="observablehq-interactive_homeless"></div>
+        </div>
     </div>
 
     <body>
