@@ -1,0 +1,34 @@
+    <div id="menu"></div>
+    <div id="loading">Loading data ...</div>
+    <div id="content" class=" ms-Fabric ms-font-m">
+        <h1>The cost of Homelessness in Ireland</h1>
+        <div>
+            <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
+                    onchange="yearSelected(this)">
+                    {{#each yearSelects}}
+                    <option value="{{year}}" selected="{{selected}}">{{year}} </option>
+                    {{/each}}
+                </select> is/was <span class="em" id="data-cost">{{money currentSelect.total}}</span></p>
+        </div>
+        <div>
+            <p>This cost is composed of
+            <p><span id="data-direct-cost">{{money currentSelect.direct.total}}</span> of <a href="" class="hoverTooltip">direct cost<span
+                        id="data-direct-cost-breakdown">
+                            {{#if currentSelect.direct.HAP}}
+                                {{money currentSelect.direct.HAP}} in Housing assistance\n
+                            {{/if}}
+                             {{#if currentSelect.direct.RAS}}
+                                {{money currentSelect.direct.RAS}} in RAS cost\n
+                            {{/if}}
+                             {{#if currentSelect.direct.charities}}
+                                {{money currentSelect.direct.charities}} for the charitable sector\n
+                            {{/if}}
+                        </span></a>, and</p>
+            <p><span id="data-indirect-cost">{{money currentSelect.indirect}}</span> of <a href="" class="hoverTooltip">indirect cost<span
+                        id="data-indirect-cost-breakdown"></span></a>.</p>
+            </p>
+        </div>
+        <div id="human-costs">
+            <p>And incalculable human cost, as per the following stories: <span id="link-list"></span></p>
+        </div>
+    </div>

@@ -27,18 +27,31 @@ body {
     align-self: center;
 }
 
-.menu a {
-    color: inherit; 
+.menu button {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    color: inherit;
+    background-color: #ffffff; 
+    border: none;
     text-decoration: inherit;
     padding: 1em 1em 0.9em 1em;
     margin-bottom: 0.2em;
 }
 
-.menu a:hover {
+.menu button:hover {
     background-color: #e7e7e7;
+    border: none;
 }
 
-#content {
+.menu button:active {
+    border: none;
+}
+
+#page {
     display: flex;
     justify-content: center;
     align-self: center;
