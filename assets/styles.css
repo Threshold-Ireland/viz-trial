@@ -13,7 +13,7 @@ body {
 */
 
 h3.highlight {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .em {
@@ -85,14 +85,14 @@ i:hover {
 }
 
 #headline {
-    background-color: #f8f8f8;
-    border-radius: 25px;
+    background-color: #e8e8e8;
+    border-radius: 20px;
     padding: 20px;
 }
 
 #midline {
-    background-color: #b8b8b8;
-    border-radius: 25px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
     padding: 20px;
 }
 
