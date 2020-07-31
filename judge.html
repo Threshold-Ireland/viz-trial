@@ -32,7 +32,7 @@
     \(x_1\) = current availability, \(x_2\) = desired availability
     <ul>
         <li>will increase/decrease rent by: \(\exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_1)}) - \exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_2)})\)
-        <li>will increase/decrease homeless population by: \(\left|\exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_1)}) - exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_2)})\right| \cdot 2.983\)
+        <li>will increase/decrease homeless population by: \(\left|\exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_1)}) - \exp(12.076 \cdot 0.945 ^ {1.1532 \cdot \log(x_2)})\right| \cdot 2.983\)
     </ul>
     The relationship is exponential, so the more availability when there's low availability to begin with \(\lt 3000\) units),
     the more drastic the effect will be on rent price.
