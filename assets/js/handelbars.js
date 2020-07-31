@@ -20,6 +20,7 @@ Handlebars.getTemplate = function (name) {
 };
 
 Handlebars.showPage = function (page, context=undefined) {
+  currentPage = PAGES_IN_ROTATION.indexOf(page);
   if(page === PAGE_HOME && !context){
     context = homeContext(DATA.data_info.default_year)
   }
