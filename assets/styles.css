@@ -83,11 +83,13 @@ i:hover {
 #headline {
     background-color: #b8b8b8;
     border-radius: 25px;
+    padding: 20px;
 }
 
 #midline {
     background-color: #b8b8b8;
     border-radius: 25px;
+    padding: 20px;
 }
 
 a.hoverTooltip {
