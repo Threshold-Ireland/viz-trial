@@ -1,0 +1,34 @@
+<h1>For Hackathon Judges</h1>
+<h3>Summary of results</h3>
+
+<ul>
+<li>Wrote code, including using Azure Cognitive Services, to translate PDFs to CSVs, retrieve CSVs from government data services, do data cleaning,
+etc.
+<li>Developed a model for the cost of homelessness in Ireland, involving figuring out a model accounting for direct and indirect expenditure. Expose
+those assumptions on the main dashboard.
+<li>From that data and that model, build auto-updating dashboards (on main linked page) where we were confident of the strength of the correlations
+we'd found (and had time to finish them).
+<li>Found a series of equations to describe other relationships (some illustrated below).
+<li>Helped the charity partner start their data fluency / digital transformation process, and gave them really useful ways to talk numbers to
+organizations that only talk numbers, rather than personal experiences.
+<li>Did a series of data explorations in Jupyter, helpful for advocacy purposes for the charity partner [Threshold](http://www.threshold.ie), and could
+be turned into auto-updating dashboards later with more time.
+<ol>
+<li>We noticed a strong relationship between unit availability and rent price if you shift rent price by 18 months - could be a lag reaction
+of pricing to how many units are on the market at a given time. There's an equation to the curve, which we found, so we can potentially say
+something like "if we added 100 additional available rental units to the market, in 18 months we can expect average rental prices to drop by X".
+, which [from the previous linear relationship between rent price and homeless #] would mean N fewer homeless adults"
+<p>
+That equation is:
+```wo inputs:
+x1 = current availability, x2 = desired availability
+ 
+will increase/decrease rent by: exp(12.076 * (0.945 ** (1.1532 * log(x1)))) - exp(12.076 * (0.945 ** (1.1532 * log(x2))))
+
+will increase/decrease homeless population by: abs(exp(12.076 * (0.945 ** (1.1532 * log(x1)))) - exp(12.076 * (0.945 ** (1.1532 * log(x2))))) * 2.983```
+The relationship is exponential, so the more availability when there's low availability to begin with (<3K units),
+the more drastic the effect will be on rent price.
+
+<img src="assets/static_img/dublin-available-versus-rent-price.png">
+</li>
+</li>
