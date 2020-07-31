@@ -12,6 +12,10 @@ body {
 	}
 */
 
+h3.highlight {
+    font-size: 30px;
+}
+
 .em {
     font-weight: bold;
 }
@@ -81,7 +85,7 @@ i:hover {
 }
 
 #headline {
-    background-color: #b8b8b8;
+    background-color: #f8f8f8;
     border-radius: 25px;
     padding: 20px;
 }
