@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+/* https://images.unsplash.com/photo-1494537604714-7975224eea63?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=d-a-v-i-d-s-o-n-l-u-n-a-yOzIE5VTEpo-unsplash.jpg&w=1920 */
+/* background #FFCC66 url("butterfly.gif") no-repeat fixed 50% 50%;
+/* [background-color] | [background-image] | [background-repeat] | [background-attachment] | [background-position] */
+/* p {
+		font: italic bold 30px arial, sans-serif;
+	}
+*/
+
 .em {
     font-weight: bold;
 }
@@ -71,6 +79,8 @@ i:hover {
     align-self: center;
     flex-direction: column;
 }
+
+#
 
 a.hoverTooltip {
     border-bottom: 1px dashed;
