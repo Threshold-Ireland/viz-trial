@@ -1,0 +1,43 @@
+
+.logo {
+    height: 2em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 3em;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: #A30F33 0.1em solid;
+}
+
+.menu > *{
+    display: flex;
+    align-self: center;
+}
+
+.menu button {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    color: inherit;
+    background-color: #ffffff; 
+    border: none;
+    text-decoration: inherit;
+    padding: 1em 1em 0.9em 1em;
+    margin-bottom: 0.2em;
+}
+
+.menu button:hover {
+    background-color: #e7e7e7;
+    border: none;
+}
+
+.menu button:active {
+    border: none;
+}
