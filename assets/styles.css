@@ -80,7 +80,15 @@ i:hover {
     flex-direction: column;
 }
 
-#
+#headline {
+    background-color: #b8b8b8;
+    border-radius: 25px;
+}
+
+#midline {
+    background-color: #b8b8b8;
+    border-radius: 25px;
+}
 
 a.hoverTooltip {
     border-bottom: 1px dashed;
