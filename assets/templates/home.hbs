@@ -6,7 +6,7 @@
             {{#each yearSelectData}}
                 <option autocomplete="off" value="{{year}}" {{#if selected}} selected="{{selected}}" {{/if}} >{{year}} </option>
             {{/each}}
-        </select> is/was <span class="em" id="data-cost">{{money currentSelect.total}}</span></p>.
+        </select> is/was <span class="em" id="data-cost">{{money currentSelect.total}}.</span></p>
         <p>That is enough money to build approximately {{houses currentSelect.total}} houses.</p>
     </h3>
 </div>
