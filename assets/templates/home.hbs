@@ -1,5 +1,6 @@
 <h1>The cost of Homelessness in Ireland</h1>
 <div id="headline">
+    <h3 class="highlight">
     <p>The <span class="em">cost</span> of Homelessness in Ireland during <select name="year" id="year-select"
             onchange="yearSelected(this)">
             {{#each yearSelectData}}
@@ -7,8 +8,10 @@
             {{/each}}
         </select> is/was <span class="em" id="data-cost">{{money currentSelect.total}}</span></p>.
         <p>That is enough money to build approximately {{houses currentSelect.total}} houses.</p>
+    </h3>
 </div>
 <div id="midline">
+    <h3 class="midlight">
     <p>That cost is composed of
         <span id="data-direct-cost">{{money currentSelect.direct.total}}</span> of <a href=""
             class="hoverTooltip">direct
@@ -22,6 +25,7 @@
                 {{money currentSelect.indirect.medical_spend}} in additional medical costs,
                 {{money currentSelect.indirect.justice_spend}} in additional costs to the justice system.
             </span></a>.</p>
+       </h3>
     </p>
 </div>
 {{#if links}}
